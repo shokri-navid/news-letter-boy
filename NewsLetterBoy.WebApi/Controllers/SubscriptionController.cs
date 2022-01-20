@@ -41,7 +41,7 @@ namespace NewsLetterBoy.WebApi.Controllers
         }
 
         [HttpDelete("{userId}/newsletter/{newsLetterId}")]
-        public async Task<ActionResult<ResponseBase>> Unsubscribe([FromRoute] int userId, [FromQuery] int newsLetterId)
+        public async Task<ActionResult<ResponseBase>> Unsubscribe([FromRoute] int userId, [FromRoute] int newsLetterId)
         {
 
             await _service.UnsubscribeAsync(userId, newsLetterId);
