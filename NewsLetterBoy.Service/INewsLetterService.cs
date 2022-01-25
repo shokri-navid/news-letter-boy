@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using NewsLetterBoy.Model;
 using NewsLetterBoy.Model.NewsLetter;
 
 namespace NewsLetterBoy.Service

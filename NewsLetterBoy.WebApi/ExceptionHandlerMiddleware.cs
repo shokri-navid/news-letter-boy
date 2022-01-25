@@ -1,13 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using NewsLetterBoy.Model;
 using NewsLetterBoy.WebApi.Dto.Response;
-using Newtonsoft.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace NewsLetterBoy.WebApi
