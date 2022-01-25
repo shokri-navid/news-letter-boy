@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using NewsLetterBoy.Model;
 using NewsLetterBoy.Model.NewsLetter;
 using NewsLetterBoy.Model.Subscription;
 
