@@ -10,14 +10,9 @@ namespace NewsLetterBoy.Repository
 {
     public class NewsLetterRepository : GenericRepository<NewsLetter> , INewsLetterRepository
     {
-        public NewsLetterRepository(NewsLetterDbContext context, ILogger<NewsLetterRepository> logger) : base(context, logger)
+        public NewsLetterRepository(NewsLetterDbContext context, ILogger<NewsLetterRepository> logger) : base(context,
+            logger)
         {
-        }
-
-        public Task kirtoot()
-        { 
-            var t =_context.NewsLetters.Count();
-            return Task.CompletedTask;
         }
     }
 }

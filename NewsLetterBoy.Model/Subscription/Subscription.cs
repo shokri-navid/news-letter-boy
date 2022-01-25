@@ -5,7 +5,6 @@ namespace NewsLetterBoy.Model.Subscription
 {
     public class Subscription : BaseModel
     {
-        private readonly ISubscriptionDomainService _domainService;
         [JsonConstructor]
         protected Subscription()
         {
@@ -13,7 +12,7 @@ namespace NewsLetterBoy.Model.Subscription
 
         public Subscription(int newsLetterId, int userId,  ISubscriptionDomainService domainService, DateTime? expirationDateTime = null)
         {
-            _domainService = domainService;
+           
             if (domainService.IsUserRegisteredBefore(userId, newsLetterId))
             {
                 throw new DomainException("Repetitive newsletter subscription!!!", 400);
